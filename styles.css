@@ -1392,7 +1392,7 @@ Left-Right sec
 
   .right-side img {
     width: 107%;
-    height: 47vh;
+    height: 45vh;
     border-radius: 0 0 10px 10px;
   }
 }
@@ -2915,7 +2915,7 @@ Popup
   }
 
   .popup-content {
-    background-image: url(images/pop5.jpg);
+    background-color:#ddd;
     height: 35rem;
     width: 90%;
     margin: 0 auto;
