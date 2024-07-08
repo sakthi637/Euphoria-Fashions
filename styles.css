@@ -605,7 +605,7 @@ Main sec
   }
 
   #main {
-    height: 60vh;
+    height: 100vh;
     padding-left: 0;
     text-align: center;
   }
@@ -650,7 +650,7 @@ Main sec
   }
 
   #main {
-    height: 70vh;
+    height: 100vh;
     text-align: center;
   }
 
@@ -694,7 +694,7 @@ Main sec
   }
 
   #main {
-    height: 85vh;
+    height: 100vh;
     text-align: left;
   }
 
@@ -737,7 +737,7 @@ Main sec
   }
 
   #main {
-    height: 90vh;
+    height: 100vh;
     text-align: left;
   }
 
@@ -1443,7 +1443,7 @@ Left-Right sec
   }
 
   .left-side {
-    height: 60vh;
+    height: 100vh;
     border-radius: 15px 0 0 15px;
     margin-left: 2rem;
   }
@@ -1465,7 +1465,7 @@ Left-Right sec
 
   .right-side img {
     width: 95%;
-    height: 60vh;
+    height: 100vh;
     border-radius: 0 15px 15px 0;
   }
 }
@@ -1481,7 +1481,7 @@ Left-Right sec
   }
 
   .left-side {
-    height: 90vh;
+    height: 100vh;
     padding: 50px;
     text-align: left;
     border-radius: 15px 0 0 15px;
@@ -1503,7 +1503,7 @@ Left-Right sec
 
   .right-side img {
     width: 110%;
-    height: 90vh;
+    height: 100vh;
     border-radius: 0 15px 15px 0;
   }
 }
@@ -2915,7 +2915,7 @@ Popup
   }
 
   .popup-content {
-    background-color:#ddd;
+    background-color: #ddd;
     height: 35rem;
     width: 90%;
     margin: 0 auto;
