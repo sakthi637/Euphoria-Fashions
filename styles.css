@@ -1518,7 +1518,7 @@ Men-Women
 
 #comp-new-section {
   padding: 50px;
-  width: 100%;
+  width: 100vw;
   text-align: center;
 }
 
@@ -1624,8 +1624,8 @@ Men-Women
   }
 
   .comp-column {
-    flex: 1 1 39%;
-    margin: 1%;
+    flex: 1 1 45%; 
+    margin: -1%;
     margin-bottom: 15px;
     position: relative;
   }
@@ -1644,8 +1644,8 @@ Men-Women
 
   .comp-column img {
     margin-top: -40px;
-    width: 60vw;
-    height: 39vh;
+    width: 100%; 
+    height: auto;
   }
 
   .comp-column h3 {
@@ -1654,11 +1654,12 @@ Men-Women
 
   .arrow-icon {
     position: relative;
-    bottom: 25px;
-    left: 70px;
-    font-size: 12px;
+    bottom: 20px;
+    left: 30px;
+    font-size: 9px;
   }
 }
+
 
 /* For screens between 426px and 768px */
 @media only screen and (min-width: 426px) and (max-width: 768px) {
