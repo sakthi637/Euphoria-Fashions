@@ -3,7 +3,7 @@
 
 /* Color Variables */
 :root {
-  --white: #ffffff;
+  --white: #fff;
   --black: #222;
   --green:  #512da8;
   --grey1: #f0f0f0;
@@ -179,7 +179,7 @@ Navigation
     position: fixed;
     top: 5rem;
     left: 100%;
-    width: 51%;
+    width: 50%;
     flex-direction: column;
     background-color: #ffffff;
     z-index: 100;
@@ -188,8 +188,8 @@ Navigation
 
   .nav-list.open {
     left: 0;
-    height: 100%;
-    border-radius: 0 0 20px 0;
+    height:auto;
+    border-radius: 0 0 6px 0;
   }
 
   .nav-list .nav-item {
@@ -200,6 +200,7 @@ Navigation
   .nav-list .nav-link {
     font-size: 1.5rem;
     padding: 1rem;
+    padding-bottom: 5rem;
     color: #512da8;
     text-decoration: underline;
   }
@@ -243,7 +244,7 @@ Navigation
     position: fixed;
     top: 5.5rem;
     left: 100%;
-    width: 45%;
+    width: 50%;
     flex-direction: column;
     background-color: rgb(255, 255, 255);
     z-index: 100;
@@ -252,8 +253,8 @@ Navigation
 
   .nav-list.open {
     left: 0;
-    height: 100%;
-    border-radius: 0 0 30px 0;
+    height: auto;
+    border-radius: 0 0 9px 0;
   }
 
   .nav-list .nav-item {
@@ -316,8 +317,8 @@ Navigation
 
   .nav-list.open {
     left: 0;
-    height: 100%;
-    border-radius: 0 0 30px 0;
+    height: auto;
+    border-radius: 0 0 9px 0;
   }
 
   .nav-list .nav-item {
@@ -605,7 +606,7 @@ Main sec
   }
 
   #main {
-    height: 100vh;
+    height: 60vh;
     padding-left: 0;
     text-align: center;
   }
@@ -650,7 +651,7 @@ Main sec
   }
 
   #main {
-    height: 100vh;
+    height: 70vh;
     text-align: center;
   }
 
@@ -694,7 +695,7 @@ Main sec
   }
 
   #main {
-    height: 100vh;
+    height: 85vh;
     text-align: left;
   }
 
@@ -737,7 +738,7 @@ Main sec
   }
 
   #main {
-    height: 100vh;
+    height: 90vh;
     text-align: left;
   }
 
@@ -1277,7 +1278,7 @@ Left-Right sec
 .new-section-content {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
+  width: 100vw;
   margin: 0 auto;
 }
 
@@ -1432,7 +1433,7 @@ Left-Right sec
 
   .right-side img {
     width: 106%;
-    height: 50vh;
+    height: 45vh;
     border-radius: 0 0 10px 10px;
   }
 }
@@ -1443,7 +1444,7 @@ Left-Right sec
   }
 
   .left-side {
-    height: 100vh;
+    height: 60vh;
     border-radius: 15px 0 0 15px;
     margin-left: 2rem;
   }
@@ -1465,7 +1466,7 @@ Left-Right sec
 
   .right-side img {
     width: 95%;
-    height: 100vh;
+    height: 60vh;
     border-radius: 0 15px 15px 0;
   }
 }
@@ -1481,7 +1482,7 @@ Left-Right sec
   }
 
   .left-side {
-    height: 100vh;
+    height: 90vh;
     padding: 50px;
     text-align: left;
     border-radius: 15px 0 0 15px;
@@ -1503,7 +1504,7 @@ Left-Right sec
 
   .right-side img {
     width: 110%;
-    height: 100vh;
+    height: 90vh;
     border-radius: 0 15px 15px 0;
   }
 }
@@ -1548,7 +1549,7 @@ Men-Women
   flex: 1;
   margin: 0 10px;
   padding: 20px;
-  width: 100%;
+  width: 100vw;
   border-radius: 10px;
   position: relative;
   display: flex;
@@ -1623,8 +1624,8 @@ Men-Women
   }
 
   .comp-column {
-    flex: 1 1 45%; 
-    margin: -1%;
+    flex: 1 1 39%;
+    margin: 1%;
     margin-bottom: 15px;
     position: relative;
   }
@@ -1643,8 +1644,8 @@ Men-Women
 
   .comp-column img {
     margin-top: -40px;
-    width: 100%; 
-    height: auto;
+    width: 60vw;
+    height: 39vh;
   }
 
   .comp-column h3 {
@@ -1653,12 +1654,11 @@ Men-Women
 
   .arrow-icon {
     position: relative;
-    bottom: 20px;
-    left: 30px;
-    font-size: 9px;
+    bottom: 25px;
+    left: 70px;
+    font-size: 12px;
   }
 }
-
 
 /* For screens between 426px and 768px */
 @media only screen and (min-width: 426px) and (max-width: 768px) {
@@ -2915,7 +2915,6 @@ Popup
   }
 
   .popup-content {
-    background-color: #ddd;
     height: 35rem;
     width: 90%;
     margin: 0 auto;
@@ -3204,6 +3203,3 @@ form span {
   background-color: var(--green);
   color: #fff;
 }
-
-
-
