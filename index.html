@@ -2,21 +2,41 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Box icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"/>
-    <!-- Custom StyleSheet -->
+  
+    <!-- Boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Glide js -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+ES+Deco:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&family=Edu+QLD+Beginner:wght@400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playwrite+ES+Deco:wght@100..400&family=Playwrite+NG+Modern:wght@100..400&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.theme.css">
+    <!-- Custom StyleSheet -->
     <link rel="stylesheet" href="styles.css" />
-    <title>Men's Collection</title>
+    <title>Euphoria.com</title>
   </head>
-
   <body>
+
+    <!-- 
+============
+Nav bar
+============
+ -->
+    
     <header class="header" id="header">
    
       <div class="navigation">
         <div class="nav-center container d-flex">
-        <a href="#" class="logo"><img src="images/Logo.svg" alt="Logo"></a>
+        <a href="/" class="logo"><img src="images/Logo.svg" alt="Logo"></a>
 
           <ul class="nav-list d-flex">
             <li class="nav-item">
@@ -26,7 +46,7 @@
               <a href="product.html" class="nav-link">Men</a>
             </li>
             <li class="nav-item">
-            <a href="#terms" class="nav-link">Women</a>
+            <a href="women.html" class="nav-link">Women</a>
             </li>
             <li class="nav-item">
               <a href="#about" class="nav-link">Combos</a>
@@ -38,7 +58,8 @@
             <div class="search-box">
               <button><i class="fas fa-search"></i></button>
               <input type="text" placeholder="Search...">
-          </div>
+              
+        </div>
             <li class="icons d-flex">
             <a href="responsiveht.html" class="icon">
               <i class="bx bx-user"></i>
@@ -46,7 +67,7 @@
             
             <div class="icon">
               <i class="bx bx-heart"></i>
-              <span class="d-flex">1</span>
+              <span class="d-flex">0</span>
             </div>
             <a href="#" class="icon">
               <i class="bx bx-cart"></i>
@@ -65,7 +86,7 @@
             </div>
             <a href="#" class="icon">
               <i class="bx bx-cart"></i>
-              <span class="d-flex">1</span>
+              <span class="d-flex">0</span>
             </a>
           </div>
 
@@ -76,175 +97,382 @@
       </div>
 
     </header>
+
+
+<!-- 
+============
+Main
+============
+ -->
+
+<section id="hero">
+    <div id="main">
+        <div class="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item" style="background-image: url('images/new1.webp');"></div>
+                <div class="carousel-item" style="background-image: url('images/men1.jpg');"></div>
+                <div class="carousel-item" style="background-image: url('images/new6.jpg');"></div>
+            </div>
+              <button class="carousel-prev"><i class="fas fa-chevron-left"></i></button>
+              <button class="carousel-next"><i class="fas fa-chevron-right"></i></button>
+              <div class="carousel-dots">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+              </div>
+              <div class="overlay-content">
+                <h3>T-Shirt / Tops</h3>
+                <br>
+                <h1>Summer<br>Value Pack</h1>
+                <br>
+                <h3>cool / colorful / comfy</h3>
+                <br>
+                <button class="cta-button">Shop Now</button>
+              </div>
+        </div>
+    </div>
  
-    <!-- All Products -->
-    <section class="section all-products" id="products">
-      <div class="top container">
-        <h1>Women's Fashion</h1>
-        <form>
-          <select>
-            <option value="1">Defualt Sorting</option>
-            <option value="2">Sort By Price</option>
-            <option value="3">Sort By Popularity</option>
-            <option value="4">Sort By Sale</option>
-            <option value="5">Sort By Rating</option>
-          </select>
-          <span><i class="bx bx-chevron-down"></i></span>
-        </form>
-      </div>
-      <div class="product-center container">
-        <div class="product-item">
-          <div class="overlay">
-            <a href="productDetails.html" class="product-thumb">
-              <img src="./bgs/womn1.png" alt="" />
-            </a>
-            <span class="discount">67%</span>
-          </div>
-          <div class="product-info">
-            <span>WOMEN'S CLOTHES</span>
-            <a href="productDetails.html">Hoodies</a>
-            <h4>$150</h4>
-          </div>
-          <ul class="icons">
-            <li><i class="bx bx-heart"></i></li>
-            <li><i class="bx bx-search"></i></li>
-            <li><i class="bx bx-cart"></i></li>
-          </ul>
-        </div>
-        <div class="product-item">
-          <div class="overlay">
-            <a href="" class="product-thumb">
-              <img src="./bgs/womn2.png" alt="" />
-            </a>
-            <span class="discount">43%</span>
-          </div>
-          <div class="product-info">
-            <span>WOMEN'S CLOTHES</span>
-            <a href="">Coats & Parkas</a>
-            <h4>$100</h4>
-          </div>
-          <ul class="icons">
-            <li><i class="bx bx-heart"></i></li>
-            <li><i class="bx bx-search"></i></li>
-            <li><i class="bx bx-cart"></i></li>
-          </ul>
-        </div>
-        <div class="product-item">
-          <div class="overlay">
-            <a href="" class="product-thumb">
-              <img src="./bgs/womn3.png" alt="" />
-            </a>
-            
-          </div>
-          <div class="product-info">
-            <span>WOMEN'S CLOTHES</span>
-            <a href="">Tees & T-Shirt</a>
-            <h4>$97</h4>
-          </div>
-          <ul class="icons">
-            <li><i class="bx bx-heart"></i></li>
-            <li><i class="bx bx-search"></i></li>
-            <li><i class="bx bx-cart"></i></li>
-          </ul>
-        </div>
-        <div class="product-item">
-          <div class="overlay">
-            <a href="" class="product-thumb">
-              <img src="./bgs/womn4.png" alt="" />
-            </a>
-            <span class="discount">56%</span>
-          </div>
-          <div class="product-info">
-            <span>WOMEN'S CLOTHES</span>
-            <a href="">Boxers</a>
-            <h4>$46</h4>
-          </div>
-          <ul class="icons">
-            <li><i class="bx bx-heart"></i></li>
-            <li><i class="bx bx-search"></i></li>
-            <li><i class="bx bx-cart"></i></li>
-          </ul>
-        </div>
-        <div class="product-item">
-          <div class="overlay">
-            <a href="" class="product-thumb">
-              <img src="./bgs/womn5.jpg" alt="" />
-            </a>
-            <span class="discount">40%</span>
-          </div>
-          <div class="product-info">
-            <span>WOMEN'S CLOTHES</span>
-            <a href="">Frock</a>
-            <h4>$180</h4>
-          </div>
-          <ul class="icons">
-            <li><i class="bx bx-heart"></i></li>
-            <li><i class="bx bx-search"></i></li>
-            <li><i class="bx bx-cart"></i></li>
-          </ul>
-        </div>
-        <div class="product-item">
-          <div class="overlay">
-            <a href="" class="product-thumb">
-              <img src="./bgs/womn6.jpg" alt="" />
-            </a>
-          </div>
-          <div class="product-info">
-            <span>WOMEN'S CLOTHES</span>
-            <a href="">Western Wear</a>
-            <h4>$96</h4>
-          </div>
-          <ul class="icons">
-            <li><i class="bx bx-heart"></i></li>
-            <li><i class="bx bx-search"></i></li>
-            <li><i class="bx bx-cart"></i></li>
-          </ul>
-        </div>
-        <div class="product-item">
-          <div class="overlay">
-            <a href="" class="product-thumb">
-              <img src="./bgs/womn7.jpg" alt="" />
-            </a>
-            <span class="discount">39%</span>
-          </div>
-          <div class="product-info">
-            <span>WOMEN'S CLOTHES</span>
-            <a href="">Kurta</a>
-            <h4>$168</h4>
-          </div>
-          <ul class="icons">
-            <li><i class="bx bx-heart"></i></li>
-            <li><i class="bx bx-search"></i></li>
-            <li><i class="bx bx-cart"></i></li>
-          </ul>
-        </div>
-        <div class="product-item">
-          <div class="overlay">
-            <a href="" class="product-thumb">
-              <img src="./bgs/womn8.jpg" alt="" />
-            </a>
-          </div>
-          <div class="product-info">
-            <span>WOMEN'S CLOTHES</span>
-            <a href="">Skirts</a>
-            <h4>$133</h4>
-          </div>
-          <ul class="icons">
-            <li><i class="bx bx-heart"></i></li>
-            <li><i class="bx bx-search"></i></li>
-            <li><i class="bx bx-cart"></i></li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <section class="pagination">
-      <div class="container">
-        <span>1</span> <span>2</span> <span>3</span> <span>4</span>
-        <span><i class="bx bx-right-arrow-alt"></i></span>
-      </div>
-    </section>
+</section>
 
 
+<!-- 
+============
+Yell-Voil
+============
+ -->
+
+<section id="third">
+    <div class="left-section">
+        <div class="container1">
+             <div class="overlay-content">
+                <h5>Low Price</h5>
+                <br>
+                <h1>High Coziness</h1>
+                <p>UPTO 50% OFF</p>
+                <br>
+                <a href="#">Explore Now</a>
+              </div>
+        </div>
+    </div>
+      <div class="right-section">
+          <div class="container2">
+              <div class="overlay-content">
+                  <h5>Beyoung Presents</h5>
+                  <br>
+                  <h1>Breezy Summer<br>Style</h1>
+                  <p>UPTO 50% OFF</p>
+                  <br>
+                  <a href="#">Explore Now</a>
+              </div>
+          </div>
+      </div>
+</section>
+
+
+
+  <!-- 
+===============
+New Arrival
+===============
+ -->
+
+<section id="gallery">
+    <div class="gallery-content">
+       <span><img src="bgs/Rectangle 21 voil.png" alt="line" class="line1"> New Arrival</span> 
+        <div class="gallery-carousel">
+            <div class="gallery-images">
+                <div class="gallery-item">
+                    <img src="images2/active.jpg" alt="Gallery Image 1">
+                    <p>Knitted Joggers</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="images2/img-2.jpg" alt="Gallery Image 2">
+                    <p>Urban Shirts</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="images2/img-3.jpg" alt="Gallery Image 3">
+                    <p>Full Sleeve</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="images2/img-4.jpg" alt="Gallery Image 4">
+                    <p>Active T-Shirts</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="images2/active.jpg" alt="Gallery Image 1">
+                    <p>Knitted Joggers</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="images2/img-2.jpg" alt="Gallery Image 2">
+                    <p>Urban Shirts</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="images2/img-3.jpg" alt="Gallery Image 3">
+                    <p>Full Sleeve</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="images2/img-4.jpg" alt="Gallery Image 4">
+                    <p>Active T-Shirts</p>
+                </div>
+                
+            </div>
+            <button class="gallery-prev"><i class="fas fa-arrow-left"></i></button>
+            <button class="gallery-next"><i class="fas fa-arrow-right"></i></button>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- 
+============
+left-right
+============
+ -->
+
+<section id="new-section">
+  <div class="new-section-content">
+      <div class="left-side">
+          <div class="background-content">
+              <h1>WE MADE YOUR EVERYDAY
+                  <br> FASHION BETTER!
+              </h1>
+              <br><br>
+              <p>In our journey to improve everyday fashion, <br> <br>euphoria presents EVERYDAY wear range - <br><br>Comfortable & Afforodable fashion 24/7</p>
+              <br>
+              <br><br><button class="cta-button">Shop Now</button>
+          </div>
+      </div>
+      <div class="right-side">
+          <img src="bgs/team.png" alt="Right Side Image">
+      </div>
+  </div>
+</section>
+
+
+
+<!-- 
+===========
+Men-women
+===========
+ -->
+
+<section id="comp-new-section">
+  <div class="comp-new-section-content">
+      <span><img src="bgs/Rectangle 21 voil.png" alt="line" class="line2"> Categories For Men</span>
+      <div class="comp-row">
+          <div class="comp-column">
+              <img src="bgs/shirt.png" alt="Design 1">
+              <h3>Shirts</h3>
+              <a href="#"><p>Explore Now !</p></a>
+              <i class="fas fa-arrow-right arrow-icon"></i> 
+          </div>
+          <div class="comp-column">
+              <img src="bgs/print.png" alt="Design 2">
+              <h3>Printed T-Shirts</h3>
+              <a href="#"><p>Explore Now !</p></a>
+              <i class="fas fa-arrow-right arrow-icon"></i> 
+          </div>
+          <div class="comp-column">
+              <img src="bgs/plain.png" alt="Design 3">
+              <h3>Plain T-Shirts</h3>
+              <a href="#"><p>Explore Now !</p></a>
+              <i class="fas fa-arrow-right arrow-icon"></i> 
+          </div>
+          <div class="comp-column">
+              <img src="images2/polo.jpg" alt="Design 4">
+              <h3>Polo T-Shirt</h3>
+              <a href="#"><p>Explore Now !</p></a>
+              <i class="fas fa-arrow-right arrow-icon"></i> 
+          </div>
+      </div>
+      <div class="comp-row">
+          <div class="comp-column">
+              <img src="bgs/hood.png" alt="Design 5">
+              <h3>Hoodies & Sweetshirt</h3>
+              <a href="#"><p>Explore Now !</p></a>
+              <i class="fas fa-arrow-right arrow-icon"></i> 
+          </div>
+          <div class="comp-column">
+              <img src="bgs/jeans.png" alt="Design 6">
+              <h3>Jeans</h3>
+              <a href="#"><p>Explore Now !</p></a>
+              <i class="fas fa-arrow-right arrow-icon"></i> 
+          </div>
+          <div class="comp-column">
+              <img src="bgs/acti.png" alt="Design 7">
+              <h3>Activewear</h3>
+              <a href="#"><p>Explore Now !</p></a>
+              <i class="fas fa-arrow-right arrow-icon"></i> 
+          </div>
+          <div class="comp-column">
+              <img src="bgs/box.png" alt="Design 8">
+              <h3>Boxers</h3>
+              <a href="#"><p>Explore Now !</p></a>
+              <i class="fas fa-arrow-right arrow-icon"></i> 
+          </div>
+      </div>
+       <span><img src="bgs/Rectangle 21 voil.png" alt="line" class="line2"> Categories For Women</span>
+      <div class="comp-row">
+          <div class="comp-column">
+              <img src="bgs/womn1.png" alt="Design 1">
+              <h3>Hoodies & Sweetshirt</h3>
+              <a href="#"><p>Explore Now !</p></a>
+              <i class="fas fa-arrow-right arrow-icon"></i> 
+          </div>
+          <div class="comp-column">
+              <img src="bgs/womn2.png" alt="Design 2">
+              <h3>Coats & Parkas</h3>
+              <a href="#"><p>Explore Now !</p></a>
+              <i class="fas fa-arrow-right arrow-icon"></i> 
+          </div>
+          <div class="comp-column">
+              <img src="bgs/womn3.png" alt="Design 3">
+              <h3>Tees & T-Shirt</h3>
+              <a href="#"><p>Explore Now !</p></a>
+              <i class="fas fa-arrow-right arrow-icon"></i> 
+          </div>
+          <div class="comp-column">
+              <img src="bgs/womn4.png" alt="Design 4">
+              <h3>Boxers</h3>
+              <a href="#"><p>Explore Now !</p></a>
+              <i class="fas fa-arrow-right arrow-icon"></i> 
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- 
+==============
+Brand Deals
+==============
+ -->
+
+<section id="back" >
+  <div class="back-content">
+      <h1>Top Brand Deal</h1>
+      <p class="in">Up To <span class="int">60%</span> off on brands</p>
+      <div class="back-images">
+          <div class="back-image">
+              <img src="bgs/nik.png" alt="Image 1">
+          </div>
+          <div class="back-image">
+              <img src="bgs/hm.png" alt="Image 2">
+          </div>
+          <div class="back-image">
+              <img src="bgs/us.png" alt="Image 3">
+          </div>
+          <div class="back-image">
+              <img src="bgs/lvs.png" alt="Image 4">
+          </div>
+          <div class="back-image">
+              <img src="bgs/pum.png" alt="Image 5">
+          </div>
+      </div>
+  </div>
+</section>
+
+
+<!-- 
+=================
+In the Limelight
+=================
+ -->
+
+<section id="wish">
+  <div class="wish-content">
+      <span><img src="bgs/Rectangle 21 voil.png" alt="line" class="line3"> In The Limelight</span>
+      <div class="wish-row">
+          <div class="wish-column">
+              <i class="wishlist-icon fa fa-heart"></i> 
+              <img src="bgs/wit.png" alt="Design 1">
+              <h3>Black Sweartshirt </h3>
+              <a href="#"><p>Jhanvi's Brand</p></a>
+              <p class="dollar">$123.00</p> 
+          </div>
+          <div class="wish-column">
+              <i class="wishlist-icon fa fa-heart"></i> 
+              <img src="bgs/peach.png" alt="Design 2">
+              <h3>Line Pattern Black</h3>
+              <a href="#"><p>AS's Brand</p></a>
+              <p class="dollar">$37.00</p> 
+          </div>
+          <div class="wish-column">
+              <i class="wishlist-icon fa fa-heart"></i> 
+              <img src="bgs/orange.png" alt="Design 3">
+              <h3>Black Shorts</h3>
+              <a href="#"><p>MM's Brand</p></a>
+              <p class="dollar">$39.00</p> 
+          </div>
+          <div class="wish-column">
+              <i class="wishlist-icon fa fa-heart"></i> 
+              <img src="bgs/pink.png" alt="Design 4">
+              <h3>Levender Hoodie</h3>
+              <a href="#"><p>Nike's Brand</p></a>
+              <p class="dollar">$119.00</p>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+
+<!-- 
+========
+Feedback
+========
+ -->
+
+<section id="feed">
+  <div class="feed-content">
+      <span><img src="bgs/Rectangle 21 voil.png" alt="line" class="line4"> Feedback</span>
+      <div class="feed-row">
+          <div class="feed-column">
+              <div class="profile-image">
+                  <img src="bgs/pro1.svg" alt="Profile 1">
+              </div>
+              <div class="ratings">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+              </div>
+              <h2>Floyd Miles</h2>
+              <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. 
+                  Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua <br>dolor do amet sint. Velit officia consequat duis enim velit mollit. <br>Exercitation veniam consequat sunt nostrud amet.</p>
+          </div>
+          <div class="feed-column">
+              <div class="profile-image">
+                  <img src="bgs/pro2.png" alt="Profile 2">
+              </div>
+              <div class="ratings">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  
+              </div>
+              <h2>Ronald Richards</h2>
+              <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. 
+                Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua <br>dolor do amet sint. Velit officia consequat duis enim velit mollit. <br>Exercitation veniam consequat sunt nostrud amet.</p>
+        </div>
+          <div class="feed-column">
+              <div class="profile-image">
+                  <img src="bgs/pro3.png" alt="Profile 3">
+              </div>
+              <div class="ratings">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                
+              </div>
+              <h2>Savannah Nguyen</h2>
+              <p>Amet minim mollit non deserunt ullamco est sit aliqua<br> dolor do amet sint. Velit officia consequat duis enim velit<br> mollit. <br>
+                  Exercitation veniam consequat sunt nostrud amet. Amet <br>minim mollit non deserunt ullamco est sit aliqua dolor do<br> amet sint. Velit officia consequat duis enim velit mollit. <br>Exercitation veniam consequat sunt nostrud amet.</p>
+          </div>
+      </div>
+  </div>
+</section>
 
 <!-- 
 ========
@@ -252,7 +480,7 @@ footer
 ========
  -->
 
- <footer>
+<footer>
   <div class="footer-container">
       <div class="footer-columns">
           <div class="footer-column">
@@ -328,7 +556,41 @@ footer
   </div>
 </footer>
 
-    <!-- Custom Script -->
-    <script src="./js/index.js"></script>
+
+<!-- 
+========
+popup
+========
+ -->
+
+  <div class="popup hide-popup">
+    <div class="popup-content">
+      <div class="popup-close">
+        <i class='bx bx-x'></i>
+      </div>
+      <div class="popup-left">
+        <div class="popup-img-container">
+          <img class="popup-img" src="./images/pop1.jpg" alt="popup">
+        </div>
+      </div>
+      <div class="popup-right">
+        <div class="right-content">
+          <h1>Get Discount <span>50%</span> Off</h1>
+          <p>Sign up to our newsletter and save 30% for you next purchase. No spam, we promise!
+          </p>
+          <form action="#">
+            <input type="email" placeholder="Enter your email..." class="popup-form">
+            <a href="#">Subscribe</a>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
   </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"></script>
+  <script src="./js/sample.js"></script>
+  <script src="./js/sample2.js"></script>
+  <script src="./js/slider.js"></script>
+  <script src="./js/index.js"></script> 
 </html>
